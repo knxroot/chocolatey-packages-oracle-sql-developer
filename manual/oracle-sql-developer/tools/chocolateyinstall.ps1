@@ -1,8 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
+. "$toolsDir/helpers.ps1"
+
 $packageDir = $env:ChocolateyPackageFolder
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
-. "$toolsDir/helpers.ps1"
 
 $params = Get-PackageParameters
 
@@ -23,14 +24,14 @@ $packageArgs = @{
 
 if(!$params['Username'] -or !$params['Password']) {
   throw @'
-  An Oracle account is required to download SQL developer
+  An Oracle account is required to download SQL Developer
 
   * Provide your Oracle credentials as package params to the installer and
     retry the installation:
 
     choco install oracle-sql-developer --params "'/Username:{userName} /Password:{password}'"
 
-  * If you do not have an Oracle account, you can register for one here:
+  * If you do not have an Oracle account, you can register for one here (it's free):
     https://profile.oracle.com/myprofile/account/create-account.jspx
 
 '@
