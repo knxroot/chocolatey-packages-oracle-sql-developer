@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>oracle-sql-developer</id>
+    <version>18.4.0</version>
+    <title>Oracle SQL Developer</title>
+    <authors>Oracle</authors>
+    <owners>Wayne Carson</owners>
+    <summary>Oracle SQL Developer is a graphical version of SQL*Plus that gives database developers a convenient way
+    to perform basic tasks.</summary>
+    <description>
+      Oracle SQL Developer is a free, integrated development environment that simplifies the development and management
+      of Oracle Database in both traditional and Cloud deployments. SQL Developer offers complete end-to-end development
+      of your PL/SQL applications, a worksheet for running queries and scripts, a DBA console for managing the database,
+      a reports interface, a complete data modeling solution, and a migration platform for moving your 3rd party
+      databases to Oracle.
+
+      #### Notes
+      * This version supports both 32bit and 64bit and subsequently does not have a JDK bundled with it. It has a
+      dependency on the `jdk8` package to meet the applications JDK requirement.
+      * An Oracle account is **required** to download this package. See the "Package Parameters" section below for
+      details on how to provide your Oracle credentials to the installer. If you don't have an existing account, you can
+      create one for free here: https://profile.oracle.com/myprofile/account/create-account.jspx
+
+      #### Package Parameters
+      The following package parameters are **required**:
+
+      * `/Username:` - Oracle username
+      * `/Password:` - Oracle password
+
+      To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+      To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+    </description>
+    <releaseNotes>https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/sqldev-relnotes-v184-5231669.html</releaseNotes>
+    <packageSourceUrl>ttps://github.com/wcarson/chocolatey-packages/</packageSourceUrl>
+    <projectUrl>https://www.oracle.com/database/technologies/appdev/sql-developer.html</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/wcarson/chocolatey-packages/master/icons/oracle-sql-developer.png</iconUrl>
+    <copyright>2019 Oracle</copyright>
+    <licenseUrl>http://www.oracle.com/technetwork/licenses/sqldev-license-152021.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.oracle.com/en/database/oracle/sql-developer/18.4/index.html</docsUrl>
+    <tags>oracle sql developer ide</tags>
+    <dependencies>
+      <dependency id="jdk8" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
