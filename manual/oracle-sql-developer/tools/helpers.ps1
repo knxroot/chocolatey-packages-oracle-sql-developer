@@ -1,10 +1,11 @@
-# proxy determination from Chocolatey scripts
+
 function Get-ChocolateyProxy {
   param(
     [string] $url
   )
 
   $proxy = $null
+  $proxyInfo = @{}
   $creds = [System.Net.CredentialCache]::DefaultCredentials
 
   $webclient = new-object System.Net.WebClient
@@ -42,5 +43,20 @@ function Get-ChocolateyProxy {
     Write-Host "Using system proxy server '$proxyaddress'."
   }
 
-  return $proxy
+  if($proxy) {
+    $proxyInfo.Proxy = $proxy.Address;
+    $proxyInfo.ProxyCredential = $proxy.Credentials;
+  }
+
+  return $proxyInfo
+}
+
+function Get-JdkPath() {
+  try {
+    $jdkReg = Get-ItemProperty -Path 'HKLM:SOFTWARE\JavaSoft\Java Development Kit\1.8\' -ErrorAction Stop
+    return $jdkReg.JavaHome
+  }
+  catch {
+    throw 'Could not find installation required dependency JDK8'
+  }
 }
