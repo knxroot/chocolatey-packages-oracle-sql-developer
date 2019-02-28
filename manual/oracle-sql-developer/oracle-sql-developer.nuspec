@@ -17,7 +17,7 @@
 
       #### Notes
       * This version supports both 32bit and 64bit and subsequently does not have a JDK bundled with it. It has a
-      dependency on the `jdk8` package to meet the applications JDK requirement.
+      dependency on the `jdk8` package to meet the application's JDK requirement.
       * An Oracle account is **required** to download this package. See the "Package Parameters" section below for
       details on how to provide your Oracle credentials to the installer. If you don't have an existing account, you can
       create one for free here: https://profile.oracle.com/myprofile/account/create-account.jspx
@@ -44,7 +44,4 @@
       <dependency id="jdk8" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>

@@ -24,11 +24,15 @@ $packageArgs = @{
 if(!$params['Username'] -or !$params['Password']) {
   throw @'
   An Oracle account is required to download SQL developer
+
   * Provide your Oracle credentials as package params to the installer and
     retry the installation:
+
     choco install oracle-sql-developer --params "'/Username:{userName} /Password:{password}'"
+
   * If you do not have an Oracle account, you can register for one here:
     https://profile.oracle.com/myprofile/account/create-account.jspx
+
 '@
 }
 
@@ -78,7 +82,9 @@ catch {
   Could not update SQL Developer product config file. It may already exist from a previous install or not be writable.
   Check the file to ensure the 'SetJavaHome' path is set correctly. If no file exists at this path, it will
   be created upon the first run of SQL Developer
+
   Path: $productConfPath
+
 "@
 }
 
