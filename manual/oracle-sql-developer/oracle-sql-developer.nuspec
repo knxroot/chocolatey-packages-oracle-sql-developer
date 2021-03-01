@@ -2,10 +2,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>oracle-sql-developer</id>
-    <version>18.4.0</version>
+    <version>20.4.1</version>
     <title>Oracle SQL Developer</title>
     <authors>Oracle</authors>
-    <owners>Wayne Carson</owners>
+    <owners>Wayne Carson, Gustavo Lacoste</owners>
     <summary>Oracle SQL Developer is a graphical version of SQL*Plus that gives database developers a convenient way
     to perform basic tasks.</summary>
     <description>
