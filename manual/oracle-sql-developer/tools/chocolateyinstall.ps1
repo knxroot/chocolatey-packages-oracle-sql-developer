@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-. "$toolsDir/helpers.ps1"
-
 $packageDir = $env:ChocolateyPackageFolder
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
+
+."$toolsDir/helpers.ps1"
 
 $params = Get-PackageParameters
 
@@ -58,6 +58,7 @@ catch {
     throw "Oracle login unsuccessful: $_"
   }
   $packageArgs.url = [regex]::Match($msg, '.*(http.*)\.').Groups[1].Value
+  $packageArgs.url = $packageArgs.url.Replace('https', 'http')
   $packageArgs.url = $packageArgs.url.Replace('http', 'https')
 }
 
