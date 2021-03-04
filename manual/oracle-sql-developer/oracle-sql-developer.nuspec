@@ -5,7 +5,7 @@
     <version>20.4.1</version>
     <title>Oracle SQL Developer</title>
     <authors>Oracle</authors>
-    <owners>Wayne Carson, Gustavo Lacoste</owners>
+    <owners>Gustavo Lacoste, Wayne Carson</owners>
     <summary>Oracle SQL Developer is a graphical version of SQL*Plus that gives database developers a convenient way
     to perform basic tasks.</summary>
     <description>
@@ -31,14 +31,14 @@
       To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
       To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
     </description>
-    <releaseNotes>https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/sqldev-relnotes-v184-5231669.html</releaseNotes>
-    <packageSourceUrl>ttps://github.com/wcarson/chocolatey-packages/</packageSourceUrl>
+    <releaseNotes>https://www.oracle.com/tools/sqldev/sqldev-relnotes-2041.html</releaseNotes>
+    <packageSourceUrl>https://github.com/knxroot/chocolatey-oracle-sql-developer/</packageSourceUrl>
     <projectUrl>https://www.oracle.com/database/technologies/appdev/sql-developer.html</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/wcarson/chocolatey-packages/master/icons/oracle-sql-developer.png</iconUrl>
-    <copyright>2019 Oracle</copyright>
-    <licenseUrl>http://www.oracle.com/technetwork/licenses/sqldev-license-152021.html</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/knxroot/chocolatey-oracle-sql-developer/master/icons/oracle-sql-developer.png</iconUrl>
+    <copyright>2021 Oracle</copyright>
+    <licenseUrl>https://www.oracle.com/downloads/licenses/sqldev-license.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://docs.oracle.com/en/database/oracle/sql-developer/18.4/index.html</docsUrl>
+    <docsUrl>https://docs.oracle.com/en/database/oracle/sql-developer/index.html</docsUrl>
     <tags>oracle sql developer ide</tags>
     <dependencies>
       <dependency id="jdk8" />
