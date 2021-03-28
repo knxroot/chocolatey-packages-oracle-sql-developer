@@ -11,8 +11,11 @@ $version = '20.4.1'
 $zipFileName = 'sqldeveloper-20.4.1.407.0006-no-jre.zip'
 $url = "https://download.oracle.com/otn/java/sqldeveloper/$zipFileName"
 $sha1hash = 'df90320a3a6e15df90fafb9d0c603317f3a68b84'
-$loginSubmit = 'https://login.oracle.com/oam/server/sso/auth_cred_submit'
+$loginSubmit = 'https://login.oracle.com/oam/server/auth_cred_submit'
 $proxy = Get-ChocolateyProxy $url
+
+# disable need to run Internet Explorer first launch configuration
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Internet Explorer\Main" -Name "DisableFirstRunCustomize" -Value 2
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>oracle-sql-developer</id>
-    <version>20.4.1</version>
+    <version>20.4.1.20210328</version>
     <title>Oracle SQL Developer</title>
     <authors>Oracle</authors>
     <owners>Gustavo Lacoste, Wayne Carson</owners>
@@ -16,11 +16,11 @@
       databases to Oracle.
 
       #### Notes
-      * This version supports both 32bit and 64bit and subsequently does not have a JDK bundled with it. It has a
-      dependency on the `jdk8` package to meet the application's JDK requirement.
+      * This version supports both 32bit and 64bit and subsequently does not have a JDK bundled with it. 
       * An Oracle account is **required** to download this package. See the "Package Parameters" section below for
       details on how to provide your Oracle credentials to the installer. If you don't have an existing account, you can
       create one for free here: https://profile.oracle.com/myprofile/account/create-account.jspx
+      * Internet Explorer is required for login to Oracle website before downloading the software.
 
       #### Package Parameters
       The following package parameters are **required**:
@@ -28,7 +28,7 @@
       * `/Username:` - Oracle username
       * `/Password:` - Oracle password
 
-      To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+      To pass parameters, use `--params "''"` (e.g. `choco install -y oracle-sql-developer --params="'/Username:test@gmail.com /Password:ThePassword'"`).
       To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
     </description>
     <releaseNotes>https://www.oracle.com/tools/sqldev/sqldev-relnotes-2041.html</releaseNotes>

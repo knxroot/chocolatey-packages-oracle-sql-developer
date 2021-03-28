@@ -10,6 +10,6 @@
      </MappedFolder>
    </MappedFolders>
    <LogonCommand>
-     <Command>powershell.exe -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "C:\users\wdagutilityaccount\desktop\testpkg\InstallChocolateyJdk8.ps1"</Command>
+     <Command>powershell.exe -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "C:\users\wdagutilityaccount\desktop\testpkg\InstallChocolatey.ps1"</Command>
    </LogonCommand>
 </Configuration>

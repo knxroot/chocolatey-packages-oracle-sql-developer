@@ -1,3 +1,3 @@
 # Chocolatey Packages
 
-This contains Chocolatey packages maintained by me. Some may even be available at https://chocolatey.org/packages.
+This contains the Chocolatey package oracle-sql-developer maintained by me. Available at https://chocolatey.org/packages/oracle-sql-developer .
