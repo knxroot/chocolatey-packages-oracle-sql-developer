@@ -9,7 +9,7 @@ $params = Get-PackageParameters
 
 $version = '21.4.1'
 $zipFileName = 'sqldeveloper-21.4.1.349.1822-no-jre.zip'
-$url = "$zipFileName"
+$url = "https://download.oracle.com/otn/java/sqldeveloper/$zipFileName"
 $sha1hash = '7adad1dc495c454b169e6ac196bfaf7d7aee55dc'
 $loginSubmit = 'https://login.oracle.com/oam/server/auth_cred_submit'
 $proxy = Get-ChocolateyProxy $url

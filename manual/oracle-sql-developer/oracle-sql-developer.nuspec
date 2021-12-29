@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>oracle-sql-developer</id>
-    <version>21.4.1.349.1822</version>
+    <version>21.4.1.20211228</version>
     <title>Oracle SQL Developer</title>
     <authors>Oracle</authors>
     <owners>Gustavo Lacoste</owners>
@@ -12,7 +12,7 @@
       Oracle Corporation provides this product free; it uses the Java Development Kit.
 
       #### Important Notes
-      1.-  This version supports both 32bit and 64bit and subsequently does not have a JDK bundled with it. 
+      1.-  This version supports both 32bit and 64bit and subsequently does not have a JDK bundled with it.
       2.- An Oracle account is **required** to download this package. See the "Package Parameters" section below for
       details on how to provide your Oracle credentials to the installer. If you don't have an existing account, you can
       create one for free here: https://profile.oracle.com/myprofile/account/create-account.jspx

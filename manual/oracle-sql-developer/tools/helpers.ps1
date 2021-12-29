@@ -4,6 +4,10 @@ function Get-ChocolateyProxy {
     [string] $url
   )
 
+  Write-Host "*****"
+  write-host $url
+  Write-Host "*****"
+
   $proxy = $null
   $proxyInfo = @{}
   $creds = [System.Net.CredentialCache]::DefaultCredentials
