@@ -2,22 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>oracle-sql-developer</id>
-    <version>20.4.1.20210328</version>
+    <version>21.4.1.349.1822</version>
     <title>Oracle SQL Developer</title>
     <authors>Oracle</authors>
-    <owners>Gustavo Lacoste, Wayne Carson</owners>
-    <summary>Oracle SQL Developer is a graphical version of SQL*Plus that gives database developers a convenient way
-    to perform basic tasks.</summary>
+    <owners>Gustavo Lacoste</owners>
+    <summary>Oracle SQL Developer is an Integrated development environment (IDE) for working with SQL in Oracle databases.</summary>
     <description>
-      Oracle SQL Developer is a free, integrated development environment that simplifies the development and management
-      of Oracle Database in both traditional and Cloud deployments. SQL Developer offers complete end-to-end development
-      of your PL/SQL applications, a worksheet for running queries and scripts, a DBA console for managing the database,
-      a reports interface, a complete data modeling solution, and a migration platform for moving your 3rd party
-      databases to Oracle.
+      Oracle SQL Developer is an Integrated development environment (IDE) for working with SQL in Oracle databases.
+      Oracle Corporation provides this product free; it uses the Java Development Kit.
 
-      #### Notes
-      * This version supports both 32bit and 64bit and subsequently does not have a JDK bundled with it. 
-      * An Oracle account is **required** to download this package. See the "Package Parameters" section below for
+      #### Important Notes
+      1.-  This version supports both 32bit and 64bit and subsequently does not have a JDK bundled with it. 
+      2.- An Oracle account is **required** to download this package. See the "Package Parameters" section below for
       details on how to provide your Oracle credentials to the installer. If you don't have an existing account, you can
       create one for free here: https://profile.oracle.com/myprofile/account/create-account.jspx
       * Internet Explorer is required for login to Oracle website before downloading the software.
@@ -28,12 +24,15 @@
       * `/Username:` - Oracle username
       * `/Password:` - Oracle password
 
-      To pass parameters, use `--params "''"` (e.g. `choco install -y oracle-sql-developer --params="'/Username:test@gmail.com /Password:ThePassword'"`).
+      You need to specify your username and password in the command.
+      Example, if your password is ThePassword and your user is test@gmail.com the command is:
+      `choco install -y oracle-sql-developer --params="'/Username:test@gmail.com /Password:ThePassword'"`
+
       To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
     </description>
-    <releaseNotes>https://www.oracle.com/tools/sqldev/sqldev-relnotes-2041.html</releaseNotes>
+    <releaseNotes>https://www.oracle.com/tools/sqldev/sqldev-relnotes-21.4.html</releaseNotes>
     <packageSourceUrl>https://github.com/knxroot/chocolatey-oracle-sql-developer/</packageSourceUrl>
-    <projectUrl>https://www.oracle.com/database/technologies/appdev/sql-developer.html</projectUrl>
+    <projectUrl>https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/knxroot/chocolatey-oracle-sql-developer/master/icons/oracle-sql-developer.png</iconUrl>
     <copyright>2021 Oracle</copyright>
     <licenseUrl>https://www.oracle.com/downloads/licenses/sqldev-license.html</licenseUrl>

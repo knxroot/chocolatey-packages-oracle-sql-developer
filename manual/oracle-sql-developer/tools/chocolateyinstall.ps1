@@ -7,10 +7,10 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $params = Get-PackageParameters
 
-$version = '20.4.1'
-$zipFileName = 'sqldeveloper-20.4.1.407.0006-no-jre.zip'
-$url = "https://download.oracle.com/otn/java/sqldeveloper/$zipFileName"
-$sha1hash = 'df90320a3a6e15df90fafb9d0c603317f3a68b84'
+$version = '21.4.1'
+$zipFileName = 'sqldeveloper-21.4.1.349.1822-no-jre.zip'
+$url = "$zipFileName"
+$sha1hash = '7adad1dc495c454b169e6ac196bfaf7d7aee55dc'
 $loginSubmit = 'https://login.oracle.com/oam/server/auth_cred_submit'
 $proxy = Get-ChocolateyProxy $url
 
